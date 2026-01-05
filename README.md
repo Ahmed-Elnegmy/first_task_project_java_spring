@@ -92,7 +92,7 @@ Expected result:
 - Browser displays: Hello, Vistula!
 
 📸 Screenshot — Browser response for /greeting?name=Vistula:
-[ Greeting page](screenshot2.png)
+[ Greeting page](screenshot_2.png)
 
 ---
 
