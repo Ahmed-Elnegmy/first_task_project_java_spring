@@ -37,5 +37,5 @@ It demonstrates:
 http://localhost:8080
 
 ### 📸 Screenshot — Application running in IntelliJ console:
-[Application running in IntelliJ](screenshots/screens/screenshot1.png)
+[Application running in IntelliJ](screenshot1.png)
 
