@@ -148,10 +148,33 @@ It demonstrates a basic REST-style API endpoint.
 📸 Screenshot — Postman GET /:
 [Hello from API Controller using Postman](screenshot_5.png)
 
+---
 
+## HTTP Methods Used
+### This Task 1 application uses:
+- GET — for retrieving a response and rendering a page
 
 ---
 
+## Notes / Troubleshooting
+## 404 on http://localhost:8080
 
+- This happens if no controller mapping exists for /.
+- Solution: add @GetMapping("/") in your controller.
 
+## 500 error on /greeting
+
+- Usually means the Thymeleaf template greeting.html is missing or has errors.
+- Ensure it exists in: src/main/resources/templates/greeting.html
+
+## Image not displaying
+
+- Ensure the file exists here: src/main/resources/static/images/vistula.png
+- And template uses: th:src="@{/images/vistula.png}"
+
+--- 
+
+## Author
+### Student: Ahmed Elnegmy 74005 
+## Task: Task 1 — Spring Boot Web App
 
