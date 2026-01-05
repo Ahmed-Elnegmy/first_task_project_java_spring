@@ -91,9 +91,6 @@ If provided → it displays the given name in the HTML.
 Expected result:
 - Browser displays: Hello, Vistula!
 
-📸 Screenshot — Browser response for /greeting?name=Vistula:
-[ Greeting page](screenshot_2.png)
-
 ---
 
 ## Static Resources (Image)
@@ -109,9 +106,51 @@ Expected result:
 - The image is visible under the greeting message.
 
 📸 Screenshot — Greeting page with image visible:
+[ Greeting page with image](screenshot_2.png)
 
 ---
 
+## Postman Testing (HTTP Requests)
+The application can be tested using Postman.
+
+### Request #1 — Home endpoint
+Method: GET
+
+URL: http://localhost:8080/
+
+**Description:**  
+Returns a simple text greeting from the main controller.
+
+📸 Screenshot — Postman GET /:
+[Home endpoint using Postman](screenshot_3.png)
+
+### Request #2 — Greeting endpoint
+Method: GET
+
+URL: http://localhost:8080/greeting?name=Vistula
+
+**Description:**  
+Returns a Thymeleaf-rendered HTML page displaying a personalized greeting.  
+If no name parameter is provided, the default value Vistula is used.
+
+📸 Screenshot — Postman GET /greeting:
+[Greeting page using Postman](screenshot_4.png)
+
+### Request #3 — API Endpoint (ApiController)
+Method: GET
+
+URL: http://localhost:8080/api/hello
+
+**Description:**  
+ApiController handles this endpoint and returns a plain text or JSON response.  
+It demonstrates a basic REST-style API endpoint.
+
+📸 Screenshot — Postman GET /:
+[Hello from API Controller using Postman](screenshot_5.png)
+
+
+
+---
 
 
 
