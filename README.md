@@ -23,21 +23,12 @@ It demonstrates:
 
 ---
 
-## How to Run the Application
-### Option A — IntelliJ IDEA
-1. Open the project in IntelliJ IDEA.
-2. Open the main class:
-   `FirstProjectJavaSpringApplication.java`
-3. Click the green **Run** ▶ button.
-
----
-
 ## Verification
 ### Open in browser:
 http://localhost:8080
 
 ### 📸 Screenshot — Application running in IntelliJ console:
-[Application running in IntelliJ](screenshot_1.png)
+<img width="520" height="193" alt="screenshot_1" src="https://github.com/user-attachments/assets/c1a088f4-66dd-4c4a-af8e-68e8ecec4497" />
 
 ---
 ## Project Structure
@@ -65,34 +56,6 @@ README.md
 
 ---
 
-## Controllers and Endpoints
-### 1) Home endpoint (GET /)
-Purpose: returns a simple greeting message.
-URL:
-- GET http://localhost:8080/
-
-Implementation (HelloController):
-- Mapped with @GetMapping("/")
-(Expected result: text response in browser)
-
-📸 Screenshot — Browser response for /:
-[Mapped with @GetMapping("/")](screenshot_1.png)
-
-### 2) Greeting page (GET /greeting)
-Purpose: renders a Thymeleaf HTML page greeting.html and displays a name.
-URL examples:
-- GET http://localhost:8080/greeting
-- GET http://localhost:8080/greeting?name=Vistula
-
-### Use case:
-If the name parameter is not provided → default value is "World".
-If provided → it displays the given name in the HTML.
-
-Expected result:
-- Browser displays: Hello, Vistula!
-
----
-
 ## Static Resources (Image)
 The page greeting.html includes an image served from Spring Boot static resources
 ### Static image location
@@ -106,7 +69,7 @@ Expected result:
 - The image is visible under the greeting message.
 
 📸 Screenshot — Greeting page with image visible:
-[ Greeting page with image](screenshot_2.png)
+<img width="882" height="655" alt="screenshot_2" src="https://github.com/user-attachments/assets/add3640c-50c9-4bc0-9e02-595c034bcca8" />
 
 ---
 
@@ -122,19 +85,7 @@ URL: http://localhost:8080/
 Returns a simple text greeting from the main controller.
 
 📸 Screenshot — Postman GET /:
-[Home endpoint using Postman](screenshot_3.png)
-
-### Request #2 — Greeting endpoint
-Method: GET
-
-URL: http://localhost:8080/greeting?name=Vistula
-
-**Description:**  
-Returns a Thymeleaf-rendered HTML page displaying a personalized greeting.  
-If no name parameter is provided, the default value Vistula is used.
-
-📸 Screenshot — Postman GET /greeting:
-[Greeting page using Postman](screenshot_4.png)
+<img width="1907" height="883" alt="screenshot_3" src="https://github.com/user-attachments/assets/b1c7651d-ce93-4507-a230-313095dde079" />
 
 ### Request #3 — API Endpoint (ApiController)
 Method: GET
@@ -146,7 +97,7 @@ ApiController handles this endpoint and returns a plain text or JSON response.
 It demonstrates a basic REST-style API endpoint.
 
 📸 Screenshot — Postman GET /:
-[Hello from API Controller using Postman](screenshot_5.png)
+<img width="1828" height="837" alt="screenshot_5" src="https://github.com/user-attachments/assets/424b5be5-f843-48b1-8614-13e382f81d5c" />
 
 ---
 
@@ -174,7 +125,6 @@ It demonstrates a basic REST-style API endpoint.
 
 --- 
 
-## Author
-### Student: Ahmed Elnegmy 74005 
+### Ahmed Elnegmy 74005 
 ## Task: Task 1 — Spring Boot Web App
 
